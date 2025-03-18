@@ -1,7 +1,8 @@
 import { useState } from "react";
-import Button from "./components/button.component"
+import Button from "./components/button.component";
 import Button2 from "./components/button2.component";
 import Gallery from "./components/gallery";
+import Person from "./components/person";
 
 
 
@@ -14,11 +15,12 @@ function App() {
 
   return (
     <div>
-      <Gallery />
+      {/* <Gallery />
       <Button />
       <Button />
       <Button2 handleClick={handleClick} count={count}/>
-      <Button2 handleClick={handleClick} count={count}/>
+      <Button2 handleClick={handleClick} count={count}/> */}
+      <Person />
     </div> 
   );
 }
