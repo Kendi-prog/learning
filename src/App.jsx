@@ -3,6 +3,7 @@ import Button from "./components/button.component";
 import Button2 from "./components/button2.component";
 import Gallery from "./components/gallery";
 import Person from "./components/person";
+import Avatar from "./components/avatar.component";
 
 
 
@@ -15,12 +16,14 @@ function App() {
 
   return (
     <div>
-      {/* <Gallery />
+      <Gallery />
       <Button />
       <Button />
       <Button2 handleClick={handleClick} count={count}/>
-      <Button2 handleClick={handleClick} count={count}/> */}
+      <Button2 handleClick={handleClick} count={count}/>
       <Person />
+      <Avatar />
+
     </div> 
   );
 }
