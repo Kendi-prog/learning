@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Button from "./components/button.component"
 import Button2 from "./components/button2.component";
+import Gallery from "./components/gallery";
 
 
 
@@ -13,6 +14,7 @@ function App() {
 
   return (
     <div>
+      <Gallery />
       <Button />
       <Button />
       <Button2 handleClick={handleClick} count={count}/>
