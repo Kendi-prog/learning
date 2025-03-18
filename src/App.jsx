@@ -1,0 +1,24 @@
+import { useState } from "react";
+import Button from "./components/button.component"
+import Button2 from "./components/button2.component";
+
+
+
+function App() {
+  const [count, setCount] = useState(0);
+
+  const handleClick = () => {
+    setCount(count + 1);
+  }
+
+  return (
+    <div>
+      <Button />
+      <Button />
+      <Button2 handleClick={handleClick} count={count}/>
+      <Button2 handleClick={handleClick} count={count}/>
+    </div> 
+  );
+}
+
+export default App
