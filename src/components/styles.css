@@ -1,0 +1,9 @@
+.card {
+    padding: 20px;
+    border-radius: 5px;
+    border: 2px solid purple;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
