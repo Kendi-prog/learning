@@ -5,6 +5,7 @@ import Gallery from "./components/gallery";
 import Person from "./components/person";
 import Avatar from "./components/avatar.component";
 import CardParent from "./components/cardParent.component";
+import TaskList from "./components/taskList.component";
 
 
 
@@ -15,6 +16,12 @@ function App() {
     setCount(count + 1);
   }
 
+  const tasks = [
+    {id:1, name: "Task1", completed: false},
+    {id:2, name: "Task2", completed: false},
+    {id:3, name: "Task3", completed: true}
+  ]
+
   return (
     <div>
       {/* <Gallery />
@@ -24,7 +31,8 @@ function App() {
       <Button2 handleClick={handleClick} count={count}/>
       <Person />
       <Avatar /> */}
-      <CardParent />
+      {/* <CardParent /> */}
+      <TaskList tasks={tasks}/>
 
     </div> 
   );
