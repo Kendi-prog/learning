@@ -6,6 +6,8 @@ import Person from "./components/person";
 import Avatar from "./components/avatar.component";
 import CardParent from "./components/cardParent.component";
 import TaskList from "./components/taskList.component";
+import UsersList from "./components/users.component";
+import SoftwareDeveloperList from "./components/users2.component";
 
 
 
@@ -32,7 +34,9 @@ function App() {
       <Person />
       <Avatar /> */}
       {/* <CardParent /> */}
-      <TaskList tasks={tasks}/>
+      {/* <TaskList tasks={tasks}/> */}
+      {/* <UsersList /> */}
+      <SoftwareDeveloperList />
 
     </div> 
   );
