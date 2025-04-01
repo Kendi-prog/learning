@@ -45,15 +45,20 @@ export default function Quiz(){
                     <div key={question.id} className="question-card">
                         <h2>{question.question}</h2>
                         <ul>
-                            {question.options.map((option, index) => (
-                                <li 
-                                    key={index}
-                                    className={selectedAnswers[question.id] === option ? 'selected' : ''}
-                                    onClick={() => handleClickedAnswers(question.id, option)}
-                                >
-                                    {option}
-                                </li>
-                            ))}
+                            {question.options.map((option, index) => {
+                                const isSelected = selectedAnswers[question.id] === option;
+                                const isCorrect = option === question.answer;
+                                const className = isSelected ? (isCorrect ? 'correct' : 'incorrect') : '';
+                                return (
+                                    <li 
+                                        key={index}
+                                        className={className}
+                                        onClick={() => handleClickedAnswers(question.id, option)}
+                                    >
+                                        {option} {isSelected && (isCorrect ? '✅' : '❌')}
+                                    </li>
+                                )
+                            })}
                         </ul>
                     </div>
                 ))}

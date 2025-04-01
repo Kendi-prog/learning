@@ -40,10 +40,18 @@
     background-color: #e0e0e0;
 }
 
-.selected {
-    background-color: #155724;
-    color: aqua;
-    /* //color: #155724; */
+.correct {
+    background-color: #d4edda; /* Light green */
+    color: #155724; /* Dark green */
     font-weight: bold;
     border: 1px solid #c3e6cb;
   }
+  
+  .incorrect {
+    background-color: #f8d7da; /* Light red */
+    color: #721c24; /* Dark red */
+    font-weight: bold;
+    border: 1px solid #f5c6cb;
+  }
+  
+  
