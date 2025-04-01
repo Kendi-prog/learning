@@ -27,6 +27,7 @@ const questions = [
 
 export default function Quiz(){
     const [selectedAnswers, setSelectedAnswers] = useState({});
+    const [score, setScore] = useState(null);
 
     const handleClickedAnswers = (questionId, option) => {
         setSelectedAnswers((prev) => {
@@ -35,6 +36,16 @@ export default function Quiz(){
                 [questionId]: option
             };
         })
+    }
+
+    const calculateScore = () => {
+        let userScore = 0;
+        questions.forEach((question) => {
+            if (selectedAnswers[question.id] === question.answer) {
+                userScore += 1;
+            }
+        });
+        setScore(userScore);
     }
 
     return(
@@ -49,6 +60,7 @@ export default function Quiz(){
                                 const isSelected = selectedAnswers[question.id] === option;
                                 const isCorrect = option === question.answer;
                                 const className = isSelected ? (isCorrect ? 'correct' : 'incorrect') : '';
+                        
                                 return (
                                     <li 
                                         key={index}
@@ -62,7 +74,19 @@ export default function Quiz(){
                         </ul>
                     </div>
                 ))}
+
             </div>
+            <button 
+                onClick={calculateScore}
+                className='calculate-score-button'
+            >
+                Submit
+            </button>
+            {score !== null && (
+                <div className="score-display">
+                    <h2>Your Score: {score}/{questions.length}</h2>
+                </div>
+            )}
         </div>
     )
 }
