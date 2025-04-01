@@ -48,6 +48,11 @@ export default function Quiz(){
         setScore(userScore);
     }
 
+    const restartQuiz = () => {
+        setSelectedAnswers({});
+        setScore(null);
+    }
+
     return(
         <div>
             <h1>Quiz</h1>
@@ -85,6 +90,7 @@ export default function Quiz(){
             {score !== null && (
                 <div className="score-display">
                     <h2>Your Score: {score}/{questions.length}</h2>
+                    <button onClick={restartQuiz} className='restart-button'>Restart Quiz</button>
                 </div>
             )}
         </div>
