@@ -8,6 +8,7 @@ import CardParent from "./components/cardParent.component";
 import TaskList from "./components/taskList.component";
 import UsersList from "./components/users.component";
 import SoftwareDeveloperList from "./components/users2.component";
+import Quiz from "./components/quiz.component";
 
 
 
@@ -36,7 +37,8 @@ function App() {
       {/* <CardParent /> */}
       {/* <TaskList tasks={tasks}/> */}
       {/* <UsersList /> */}
-      <SoftwareDeveloperList />
+      {/* <SoftwareDeveloperList /> */}
+      <Quiz />
 
     </div> 
   );
