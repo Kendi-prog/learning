@@ -1,3 +1,5 @@
+import './cardprops.style.css';
+
 type CardProps = {
     name: string;
     age: number;
@@ -7,9 +9,9 @@ type CardProps = {
 function CardChild({ name, age, isPremium }: CardProps) {
     return(
         <div className="card">
-            <h1>Username on the card is {name}</h1>
-            <h2>Age on the card is {age}</h2>
-            <h3>Premium status on the card is {isPremium ? "isPremium" : "not premium"}</h3>
+            <h2>Username : {name}</h2>
+            <h2>Age : {age}</h2>
+            <h2>Premium : {isPremium ? "isPremium" : "not premium"}</h2>
         </div>
     )
 }

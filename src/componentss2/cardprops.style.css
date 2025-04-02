@@ -1,5 +1,8 @@
 .card {
+    display: flex;
+    flex-direction: column ;
     padding: 20px;
+    margin-left: 50px;
     border: 1px solid #ccc;
     border-radius: 8px;
     background-color: #e73da6;
