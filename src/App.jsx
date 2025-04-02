@@ -9,7 +9,7 @@ import TaskList from "./components/taskList.component";
 import UsersList from "./components/users.component";
 import SoftwareDeveloperList from "./components/users2.component";
 import Quiz from "./components/quiz.component";
-
+import CardParent2 from "./componentss2/card.component";
 
 
 function App() {
@@ -38,7 +38,8 @@ function App() {
       {/* <TaskList tasks={tasks}/> */}
       {/* <UsersList /> */}
       {/* <SoftwareDeveloperList /> */}
-      <Quiz />
+      {/* <Quiz /> */}
+      <CardParent2 name="Joy Leila" age={20} isPremium={true} />
 
     </div> 
   );
