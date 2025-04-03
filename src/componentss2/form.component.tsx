@@ -7,7 +7,6 @@ export default function Form(){
     //     e.stopPropagation();
     // }
     const search = (e: React.FormEvent<HTMLFormElement>) => {
-        e.stopPropagation();
         e.preventDefault();
 
         const formData = new FormData(e.currentTarget);
@@ -18,7 +17,7 @@ export default function Form(){
 
     return(
         <div onClick={() => alert('Div Clicked')} className="div-form">
-            <form onSubmit={search}>
+            <form onSubmit={search} onClick={(e) => e.stopPropagation()}>
                 <input 
                     type="text"
                     name="query"
