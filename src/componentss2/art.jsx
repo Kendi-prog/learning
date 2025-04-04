@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { sculptureList } from "../../data";
+import "./art.styles.css";
 
 export default function Art() {
     const [index, setIndex] = useState(0);
@@ -37,12 +38,15 @@ export default function Art() {
             {showMore && <p>{sculpture.description}</p>}
            
             <h3>({index + 1} of {sculptureList.length})</h3>
-            <button onClick={handleNextClick}  disabled={!next}>
-                Next
-            </button>
-            <button onClick={handlePreviousClick} disabled={!previous}>
-                Previous
-            </button>
+            <div className="buttons">
+                <button onClick={handleNextClick}  disabled={!next}>
+                    Next
+                </button>
+                <button onClick={handlePreviousClick} disabled={!previous}>
+                    Previous
+                </button>
+            </div>
+            
             
         </div>
     )
