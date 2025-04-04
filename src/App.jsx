@@ -11,6 +11,7 @@ import SoftwareDeveloperList from "./components/users2.component";
 import Quiz from "./components/quiz.component";
 import CardParent2 from "./componentss2/card.component";
 import Form from "./componentss2/form.component";
+import Art from "./componentss2/art";
 
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
       {/* <Quiz /> */}
       <CardParent2 name="Joy Leila" age={20} isPremium={true} />
       <Form />
+      <Art />
     </div> 
   );
 }
