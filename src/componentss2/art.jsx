@@ -4,9 +4,21 @@ import { sculptureList } from "../../data";
 export default function Art() {
     const [index, setIndex] = useState(0);
 
-    const handleClick = () => {
-        setIndex(index + 1);
+    let next = index < sculptureList.length - 1;
+    let previous = index > 0;
+    const handleNextClick = () => {
+        if(next) {
+            setIndex(index + 1);
+        }
+       
     }
+
+    const handlePreviousClick = () => {
+        if(previous) {
+            setIndex(index - 1);
+        } 
+    }
+
 
     let sculpture =  sculptureList[index];
     return(
@@ -16,8 +28,11 @@ export default function Art() {
             <img src={sculpture.url} alt={sculpture.alt} />
             <p>{sculpture.description}</p>
             <p>Current index: {index} of {sculptureList.length}</p>
-            <button onClick={handleClick}>
+            <button onClick={handleNextClick}  disabled={!next}>
                 Next
+            </button>
+            <button onClick={handlePreviousClick} disabled={!previous}>
+                Previous
             </button>
             
         </div>
