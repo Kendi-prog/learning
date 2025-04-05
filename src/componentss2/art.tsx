@@ -2,12 +2,21 @@ import { useState } from "react";
 import { sculptureList } from "../../data";
 import "./art.styles.css";
 
+type Sculpture = {
+    name: string;
+    artist: string;
+    url: string;
+    alt: string;
+    description: string;
+}
+
+
 export default function Art() {
     const [index, setIndex] = useState(0);
     const[showMore, setShowMore] = useState(false);
 
-    let next = index < sculptureList.length - 1;
-    let previous = index > 0;
+    const next = index < sculptureList.length - 1;
+    const previous = index > 0;
 
     const handleNextClick = () => {
         if(next) {
@@ -26,7 +35,7 @@ export default function Art() {
         setShowMore(!showMore);
     }
 
-    let sculpture =  sculptureList[index];
+    const sculpture : Sculpture =  sculptureList[index] ;
     return(
         <div className="art">
             <h2>{sculpture.name}</h2>

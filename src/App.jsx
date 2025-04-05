@@ -29,18 +29,18 @@ function App() {
 
   return (
     <div>
-      {/* <Gallery />
+      <Gallery />
       <Button />
       <Button />
       <Button2 handleClick={handleClick} count={count}/>
       <Button2 handleClick={handleClick} count={count}/>
       <Person />
-      <Avatar /> */}
-      {/* <CardParent /> */}
-      {/* <TaskList tasks={tasks}/> */}
-      {/* <UsersList /> */}
-      {/* <SoftwareDeveloperList /> */}
-      {/* <Quiz /> */}
+      <Avatar /> 
+      <CardParent />
+      <TaskList tasks={tasks}/>
+      <UsersList />
+      <SoftwareDeveloperList />
+      <Quiz />
       <CardParent2 name="Joy Leila" age={20} isPremium={true} />
       <Form />
       <Art />
