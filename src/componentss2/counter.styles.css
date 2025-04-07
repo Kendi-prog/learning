@@ -1,0 +1,33 @@
+.counter {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.counter-card {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    
+}
+
+.count-positive {
+    color: green;
+  }
+  
+.count-negative {
+    color: red;
+  }
+  
+.count-zero {
+    color: black;
+  }
+  
