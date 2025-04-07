@@ -12,6 +12,7 @@ import Quiz from "./components/quiz.component";
 import CardParent2 from "./componentss2/card.component";
 import Form from "./componentss2/form.component";
 import Art from "./componentss2/art";
+import Counter from "./componentss2/counter.component";
 
 
 function App() {
@@ -29,7 +30,7 @@ function App() {
 
   return (
     <div>
-      <Gallery />
+      {/* <Gallery />
       <Button />
       <Button />
       <Button2 handleClick={handleClick} count={count}/>
@@ -43,7 +44,8 @@ function App() {
       <Quiz />
       <CardParent2 name="Joy Leila" age={20} isPremium={true} />
       <Form />
-      <Art />
+      <Art /> */}
+      <Counter />
     </div> 
   );
 }
