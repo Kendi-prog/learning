@@ -13,7 +13,8 @@ import CardParent2 from "./componentss2/card.component";
 import Form from "./componentss2/form.component";
 import Art from "./componentss2/art";
 import Counter from "./componentss2/counter.component";
-
+import Mood from "./componentss2/mood.component";
+import Mood2 from "./componentss2/mood2.component";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -45,7 +46,9 @@ function App() {
       <CardParent2 name="Joy Leila" age={20} isPremium={true} />
       <Form />
       <Art /> */}
-      <Counter />
+      {/* <Counter /> */}
+      <Mood />
+      <Mood2 />
     </div> 
   );
 }
