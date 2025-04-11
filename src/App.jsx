@@ -16,6 +16,7 @@ import Counter from "./componentss2/counter.component";
 import Mood from "./componentss2/mood.component";
 import Mood2 from "./componentss2/mood2.component";
 import Toolbar from "./react-dev/passing-event-handlers";
+import LightSwitch from "./react-dev/light-switch";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -51,6 +52,7 @@ function App() {
       {/* <Mood />
       <Mood2 /> */}
       <Toolbar />
+      <LightSwitch />
     </div> 
   );
 }
