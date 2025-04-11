@@ -15,6 +15,7 @@ import Art from "./componentss2/art";
 import Counter from "./componentss2/counter.component";
 import Mood from "./componentss2/mood.component";
 import Mood2 from "./componentss2/mood2.component";
+import Toolbar from "./react-dev/passing-event-handlers";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -47,8 +48,9 @@ function App() {
       <Form />
       <Art /> */}
       {/* <Counter /> */}
-      <Mood />
-      <Mood2 />
+      {/* <Mood />
+      <Mood2 /> */}
+      <Toolbar />
     </div> 
   );
 }
