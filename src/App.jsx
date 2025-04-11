@@ -17,6 +17,7 @@ import Mood from "./componentss2/mood.component";
 import Mood2 from "./componentss2/mood2.component";
 import Toolbar from "./react-dev/passing-event-handlers";
 import LightSwitch from "./react-dev/light-switch";
+import InputStuckFix from "./react-dev/input-stuck-fix";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -53,6 +54,7 @@ function App() {
       <Mood2 /> */}
       <Toolbar />
       <LightSwitch />
+      <InputStuckFix />
     </div> 
   );
 }
