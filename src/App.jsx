@@ -20,6 +20,7 @@ import LightSwitch from "./react-dev/light-switch";
 import InputStuckFix from "./react-dev/input-stuck-fix";
 import ThankYou from "./react-dev/thanku";
 import Snapshot from "./react-dev/snapshot";
+import Traffic from "./react-dev/traffic";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -59,6 +60,7 @@ function App() {
       <InputStuckFix />
       <ThankYou />
       <Snapshot />
+      <Traffic />
     </div> 
   );
 }
