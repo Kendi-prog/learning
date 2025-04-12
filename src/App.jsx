@@ -19,6 +19,7 @@ import Toolbar from "./react-dev/passing-event-handlers";
 import LightSwitch from "./react-dev/light-switch";
 import InputStuckFix from "./react-dev/input-stuck-fix";
 import ThankYou from "./react-dev/thanku";
+import Snapshot from "./react-dev/snapshot";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -57,6 +58,7 @@ function App() {
       <LightSwitch />
       <InputStuckFix />
       <ThankYou />
+      <Snapshot />
     </div> 
   );
 }
