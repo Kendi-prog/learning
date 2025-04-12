@@ -11,7 +11,7 @@ export default function ThankYou () {
 
     return (
         <div>                                                                                                                                           
-             {isSent ? (
+             {!isSent ? (
                 <>
                     <textarea 
                         placeholder="Message"
