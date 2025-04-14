@@ -21,6 +21,8 @@ import InputStuckFix from "./react-dev/input-stuck-fix";
 import ThankYou from "./react-dev/thanku";
 import Snapshot from "./react-dev/snapshot";
 import Traffic from "./react-dev/traffic";
+import Updater from "./react-dev/updater";
+import MarketPlace from "./react-dev/market-place";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -61,6 +63,8 @@ function App() {
       <ThankYou />
       <Snapshot />
       <Traffic />
+      <Updater />
+      <MarketPlace />
     </div> 
   );
 }
