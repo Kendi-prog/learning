@@ -23,6 +23,7 @@ import Snapshot from "./react-dev/snapshot";
 import Traffic from "./react-dev/traffic";
 import Updater from "./react-dev/updater";
 import MarketPlace from "./react-dev/market-place";
+import MovingDot from "./react-dev/moving-dot";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -65,6 +66,7 @@ function App() {
       <Traffic />
       <Updater />
       <MarketPlace />
+      <MovingDot />
     </div> 
   );
 }
