@@ -26,6 +26,7 @@ import MarketPlace from "./react-dev/market-place";
 import MovingDot from "./react-dev/moving-dot";
 import FormChange from "./react-dev/form";
 import NestedForm from "./react-dev/nested-object";
+import Canvas from "./react-dev/moving-box";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -71,6 +72,7 @@ function App() {
       {/* <MovingDot /> */}
       <FormChange />
       <NestedForm />
+      <Canvas />
     </div> 
   );
 }
