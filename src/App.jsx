@@ -24,6 +24,7 @@ import Traffic from "./react-dev/traffic";
 import Updater from "./react-dev/updater";
 import MarketPlace from "./react-dev/market-place";
 import MovingDot from "./react-dev/moving-dot";
+import FormChange from "./react-dev/form";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -58,15 +59,16 @@ function App() {
       {/* <Counter /> */}
       {/* <Mood />
       <Mood2 /> */}
-      <Toolbar />
+      {/* <Toolbar />
       <LightSwitch />
       <InputStuckFix />
       <ThankYou />
       <Snapshot />
       <Traffic />
       <Updater />
-      <MarketPlace />
-      <MovingDot />
+      <MarketPlace /> */}
+      {/* <MovingDot /> */}
+      <FormChange />
     </div> 
   );
 }
