@@ -28,6 +28,7 @@ import FormChange from "./react-dev/form";
 import NestedForm from "./react-dev/nested-object";
 import Canvas from "./react-dev/moving-box";
 import List from "./react-dev/list";
+import List2 from "./react-dev/list2";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -75,6 +76,7 @@ function App() {
       <NestedForm />
       <Canvas /> */}
       <List />
+      <List2 />
     </div> 
   );
 }
