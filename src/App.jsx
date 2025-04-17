@@ -27,6 +27,7 @@ import MovingDot from "./react-dev/moving-dot";
 import FormChange from "./react-dev/form";
 import NestedForm from "./react-dev/nested-object";
 import Canvas from "./react-dev/moving-box";
+import List from "./react-dev/list";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -70,9 +71,10 @@ function App() {
       <Updater />
       <MarketPlace /> */}
       {/* <MovingDot /> */}
-      <FormChange />
+      {/* <FormChange />
       <NestedForm />
-      <Canvas />
+      <Canvas /> */}
+      <List />
     </div> 
   );
 }
