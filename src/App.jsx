@@ -29,6 +29,7 @@ import NestedForm from "./react-dev/nested-object";
 import Canvas from "./react-dev/moving-box";
 import List from "./react-dev/list";
 import List2 from "./react-dev/list2";
+import ShapeEditor from "./react-dev/shapes";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -77,6 +78,7 @@ function App() {
       <Canvas /> */}
       <List />
       <List2 />
+      <ShapeEditor />
     </div> 
   );
 }
