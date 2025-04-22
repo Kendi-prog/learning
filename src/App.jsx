@@ -30,6 +30,7 @@ import Canvas from "./react-dev/moving-box";
 import List from "./react-dev/list";
 import List2 from "./react-dev/list2";
 import ShapeEditor from "./react-dev/shapes";
+import Counters from "./react-dev/counters";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -76,9 +77,10 @@ function App() {
       {/* <FormChange />
       <NestedForm />
       <Canvas /> */}
-      <List />
+      {/* <List />
       <List2 />
-      <ShapeEditor />
+      <ShapeEditor /> */}
+      <Counters />
     </div> 
   );
 }
