@@ -31,6 +31,7 @@ import List from "./react-dev/list";
 import List2 from "./react-dev/list2";
 import ShapeEditor from "./react-dev/shapes";
 import Counters from "./react-dev/counters";
+import InsertingArray from "./react-dev/insertArray";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -81,6 +82,7 @@ function App() {
       <List2 />
       <ShapeEditor /> */}
       <Counters />
+      <InsertingArray />
     </div> 
   );
 }
