@@ -1,7 +1,7 @@
 import './form.styles.css';
 
 
-export default function Form(){
+export default function Form() {
     // const onhandleSubmit = (e) => {
     //     e.preventDefault();
     //     e.stopPropagation();

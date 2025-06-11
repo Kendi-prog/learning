@@ -32,6 +32,7 @@ import List2 from "./react-dev/list2";
 import ShapeEditor from "./react-dev/shapes";
 import Counters from "./react-dev/counters";
 import InsertingArray from "./react-dev/insertArray";
+import FakeLogin from "./managing-state/Fake_login";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -81,8 +82,9 @@ function App() {
       {/* <List />
       <List2 />
       <ShapeEditor /> */}
-      <Counters />
-      <InsertingArray />
+      {/* <Counters />
+      <InsertingArray /> */}
+      <FakeLogin />
     </div> 
   );
 }

@@ -1,7 +1,7 @@
 import { users } from "./users.component";
 
 export default function SoftwareDeveloperList() {
-     const developer = users.filter((user) => user.career === 'Software Developer');
+    const developer = users.filter((user) => user.career === 'Software Developer');
     const developerList = developer.map((dev) => {
         return (
             <ul key={dev.id}>
