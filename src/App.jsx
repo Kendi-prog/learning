@@ -33,6 +33,8 @@ import ShapeEditor from "./react-dev/shapes";
 import Counters from "./react-dev/counters";
 import InsertingArray from "./react-dev/insertArray";
 import FakeLogin from "./managing-state/Fake_login";
+import Mock from "./managing-state/mock";
+import MockStories from "./managing-state/mock.stories";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -85,6 +87,8 @@ function App() {
       {/* <Counters />
       <InsertingArray /> */}
       <FakeLogin />
+      <Mock />
+      <MockStories />
     </div> 
   );
 }
